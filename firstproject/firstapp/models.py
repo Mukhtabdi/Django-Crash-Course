@@ -5,8 +5,9 @@ class MenuItem(models.Model):
     name = models.CharField(max_length=255)
     price = models.BigIntegerField()
 
+# Create Reservation model
 class Reservation(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     guest_count = models.IntegerField()
-    comments = models.CharField(max_length=255)
+    comments = models.CharField(max_length=1000)
